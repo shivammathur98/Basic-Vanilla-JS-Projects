@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(222, 240, 223);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(187, 187, 187, 0.705);
+}
+.contents {
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+#heading {
+  padding: 0.5em;
+  word-spacing: 10px;
+  width: fit-content;
+}
+#p1,
+#p2 {
+  margin-right: 10px;
+  text-shadow: 0px 2px 3px grey;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+}
+#p2 {
+  color: rgb(102, 120, 226);
+}
+#tabs {
+  letter-spacing: 3px;
+  display: flex;
+  list-style: none;
+}
+#tabs li {
+  cursor: pointer;
+  margin-right: 1.5em;
+}
+#tabs li:hover {
+  color: rgb(102, 120, 226);
+}
+#icons {
+  cursor: pointer;
+  margin: 0.7em;
+  display: flex;
+  letter-spacing: 1.2em;
+  font-size: 20px;
+  color: rgb(102, 120, 226);
+}
+#menu {
+  cursor: pointer;
+  margin-right: 0.1em;
+  padding: 0.4em;
+  font-size: 25px;
+  color: rgb(102, 120, 226);
+  display: none;
+}
+.transition {
+  transform: rotate(90deg);
+  color: black !important;
+  transition: ease 0.4s;
+}
+.rtransition {
+  transform: rotate(0deg);
+  transition: ease 0.4s;
+}
+.sub_menu {
+  padding-left: 0.5em;
+  display: none;
+  list-style: none;
+}
+.sub_menu li {
+  width: fit-content;
+  letter-spacing: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+.sub_menu li:hover {
+  color: rgb(102, 120, 226);
+}
+@media screen and (max-width: 840px) {
+  #tabs {
+    display: none;
+  }
+  #icons {
+    display: none;
+  }
+  #menu {
+    display: flex;
+  }
+}
+@media screen and (min-width: 840px) {
+  .sub_menu {
+    display: none !important;
+  }
+}

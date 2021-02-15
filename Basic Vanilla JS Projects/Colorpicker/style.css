@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+a {
+  color: black;
+}
+.cf {
+  color: rgb(35, 155, 211);
+}
+.navbar_links {
+  width: 45%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar {
+  box-shadow: 0px 8px 8px rgba(187, 187, 187, 0.705);
+}
+.link {
+  word-spacing: 1.5rem;
+}
+@media screen and (max-width: 940px) {
+  .navbar_links {
+    width: 90vw;
+  }
+  .bgcolor h2 {
+    padding: 1.2rem !important;
+    font-size: 1.95rem !important;
+  }
+}
+main {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 3rem);
+}
+.bgcolor {
+  text-align: center;
+}
+.bgcolor h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(32, 32, 32);
+  border-radius: 5px;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+.button {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.8rem 1.1rem;
+  color: rgb(32, 32, 32);
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.button:hover {
+  transition: all linear 0.3s;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
